@@ -1,7 +1,7 @@
-import { index } from "drizzle-orm/mysql-core";
 import Image from "next/image";
-import Link from "next/link";
 import { db } from "~/server/db";
+
+export const dynamic = "force-dynamic";
 
 const mockUrls = [
   "https://utfs.io/f/20b0a4a3-1953-41a5-bdf3-9310a47b64df-42indm.jpg",
