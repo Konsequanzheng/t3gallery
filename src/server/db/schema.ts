@@ -22,8 +22,8 @@ export const images = createTable(
   "image",
   {
     id: serial("id").primaryKey(),
-    name: varchar("name", { length: 256 }),
-    url: varchar("url", { length: 1024 }),
+    name: varchar("name", { length: 256 }).notNull(),
+    url: varchar("url", { length: 1024 }).notNull(),
 
     userId: varchar("userId", { length: 256 }).notNull(),
 
